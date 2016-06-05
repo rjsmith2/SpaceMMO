@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XS-GEN 5</title>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!--custom CSS -->
+	<link href="css/carousel.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<img src='l.png' style="max-width:80%;margin:10%;background-color:rgba(0,0,0,.5);padding:5%;max-height:300px;margin-left:auto;margin-right:auto;display:block;height:300px;" />
+      
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+      <div class="row">
+		
+        <div class="col-lg-4">
+			
+         <h2> <a href='xsgen5.html'>Launch XS-Gen 5</a></h2> 
+		 <br />
+          <p></p>
+		  
+         
+		  <a href='http://aom.heavengames.com/cgi-bin/forums/display.cgi?action=ct&f=13,29399,,20'>Forum </a>
+        </div><!-- /.col-lg-4 -->
+		
+        <div class="col-lg-4" style='text-align:left'>
+          <h2>Changelogs (5-20-2014)</h2>
+          <p>-Added AoM Reference Code (Partial completed)</p>
+		  <p>-Added Save functionality. Will appear in Saved Map </p>
+		  <p>-Added Load functionality. Clcik on a saved map to load them</p>
+		   <p>-Network performance bug fixes</p>
+		   <p>-Corrected some UI bug</p>
+		   <p>-Pen Layer minor UI enhancements</p>
+		 
+        
+        </div><!-- /.col-lg-4 -->
+		
+        <div class="col-lg-4">
+          <h2></h2>
+         
+        </div><!-- /.col-lg-4 -->
+		
+      </div><!-- /.row -->
+	</div><br /><br /><br /><br /><br />
+ <fieldset class="container marketing" style='background-color:rgba(50,50,100,0.5)'>
+	<legend style="color:white;">Saved Maps</legend>
+	<div>
+	<script>
+	
+	var maps = JSON.parse(localStorage.getItem('maps'));
+	for(var mapNameID in maps) {
+		document.write("<div><a href='xsgen5.html#"+mapNameID+"' target='_blank'>"+mapNameID+"</a></div>");
+		
+	}
+	
+	</script>
+	</div>
+</fieldset>  
+<br />
+ <fieldset class="container marketing" style='background-color:rgba(50,50,100,0.5)'>
+	<legend style="color:white;">Tutorials</legend>
+	 <p><a href='tut1.html'>Tutorial1- Making a basic cliff in XS-Gen 5 (easy)</a></p>
+	 <p><a href='tut2.html'>Tutorial2- Adding water on top of the hill (easy)</a></p>
+	 <p><a href='tut3.html'>Tutorial3- When there's water, there's civilization (medium)</a></p>
+	
+</fieldset>  
+  </body>
+</html>
